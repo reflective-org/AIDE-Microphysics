@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aide-micro"
+version = "0.1.0"
+description = "Aerosol microphysics schemes (reference physics + learned emulators) behind one per-box interface"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24"]
+
+[project.optional-dependencies]
+# emulators; projection="clip" works with these alone, the default projection="chem" also needs tomas-jax
+tomas40-emulator = ["torch>=2.4", "huggingface_hub>=0.20"]
+# + reference physics and the chem projection. TOMAS-JAX `fast` is on its gpu-fast branch:
+tomas40 = ["aide-micro[tomas40-emulator]", "jax>=0.4.30",
+           "tomas-jax @ git+https://github.com/reflective-org/TOMAS-JAX@gpu-fast"]
+mam4 = ["aide-micro[tomas40]", "mam4-jax @ git+https://github.com/reflective-org/MAM4-JAX"]
+
+[tool.setuptools.packages.find]
+include = ["aide_micro*"]
+
+[tool.setuptools.package-data]
+"aide_micro.schemes.tomas40" = ["models.json", "norm_stats.npz"]

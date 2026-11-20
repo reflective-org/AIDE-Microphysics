@@ -1,22 +1,17 @@
-# Data and run outputs (large; not checked in)
-data/
-runs/
-*.npz
-!checkpoints/*.npz
-
-# Keep the shipped checkpoint, ignore everything else heavy
-*.pt
-!checkpoints/*.pt
-
-# Python
 __pycache__/
 *.py[cod]
+*.egg-info/
+build/
+dist/
 .venv/
 venv/
-*.egg-info/
-
-# OS / editor
 .DS_Store
-._*
 .idea/
 .vscode/
+# weights live on the Hugging Face Hub, never in git
+*.pt
+*.pth
+*.safetensors
+# local work
+_hf/
+_verify/
