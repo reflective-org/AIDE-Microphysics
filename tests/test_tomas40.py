@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: Apache-2.0
+# Copyright 2026 Reflective
 """Light checks (CPU). The bit-for-bit comparison against AIDE-SAI-link needs that tree and a GPU; it is
 described in README > Provenance. Run: pytest tests/  (set AIDE_MICRO_WEIGHTS=<dir> to test local weights
 instead of downloading)."""

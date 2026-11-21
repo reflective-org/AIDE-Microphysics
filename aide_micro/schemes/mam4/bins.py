@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: Apache-2.0
+# Copyright 2026 Reflective
 """MAM4 modes <-> the TOMAS 40-bin grid (for bin-based consumers: optics, settling, and comparisons
 with tomas40). Mass is binned with the mass-weighted lognormal, so both moments round-trip exactly per
 mode. Ported from AIDE-SAI-link src/microphysics/mam4_adapter.py (numpy versions)."""

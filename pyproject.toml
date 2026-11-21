@@ -7,7 +7,7 @@ name = "aide-micro"
 version = "0.1.0"
 description = "Aerosol microphysics schemes (reference physics + learned emulators) behind one per-box interface"
 readme = "README.md"
-license = { text = "MIT" }
+license = { text = "Apache-2.0 AND GPL-3.0-only" }   # GPL-3.0 only for aide_micro/schemes/mam4/physics.py
 requires-python = ">=3.10"
 dependencies = ["numpy>=1.24"]
 
@@ -24,3 +24,4 @@ include = ["aide_micro*"]
 
 [tool.setuptools.package-data]
 "aide_micro.schemes.tomas40" = ["models.json", "norm_stats.npz"]
+"aide_micro.schemes.mam4" = ["LICENSE"]

@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: Apache-2.0
+# Copyright 2026 Reflective
 """TOMAS 40-bin layout, floors, log transform and the emulators' normalization.
 
 State vector (82), natural logs of per-box quantities, box volume 1e6 cm3 (1 m3):

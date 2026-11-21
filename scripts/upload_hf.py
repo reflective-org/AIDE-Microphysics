@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: Apache-2.0
+# Copyright 2026 Reflective
 """Publish emulator weights to the Hugging Face Hub repo named in each scheme's models.json.
 
     python scripts/upload_hf.py <dir>      # <dir> holds tomas40/<model>/model.pt (+ README.md model card)

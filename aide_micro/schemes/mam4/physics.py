@@ -1,3 +1,7 @@
+# SPDX-License-Identifier: GPL-3.0-only
+# Copyright 2026 Reflective
+# Contains code adapted from MAM4-JAX (mam4_jax.physics.newnuc, GPL-3.0), so this file is GPL-3.0;
+# see aide_micro/schemes/mam4/LICENSE. The rest of the package is Apache-2.0.
 """MAM4 (4-mode modal) reference physics on per-box arrays: MAM4-JAX condensation, coagulation and
 calcsize/rename, with Dunne 2016 nucleation and Tabazadeh 1997 water uptake swapped in (the TOMAS-JAX
 functions), and SO2 + OH chemistry outside the core. This is the "run 3" physics of the AIDE-SAI

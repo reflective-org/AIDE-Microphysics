@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: Apache-2.0
+# Copyright 2026 Reflective
 """tomas40 reference physics: TOMAS-JAX `fast` (gpu-fast branch) on per-box arrays, with the
 production settings of the AIDE-SAI-link coupled model (src/microphysics/tomas_fast.py and the
 physics subset of tomas_emulator.py).

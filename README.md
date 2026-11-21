@@ -82,5 +82,9 @@ coupled run (all outputs identical). Earlier emulator generations remain availab
 
 ## License
 
-MIT (this repository). TOMAS-JAX (LGPL-3.0) and MAM4-JAX (GPL-3.0) are separate projects, imported as
-optional dependencies and not distributed here.
+Apache-2.0 ([LICENSE](LICENSE)), except `aide_micro/schemes/mam4/physics.py`, which adapts MAM4-JAX's
+nucleation routine and is therefore GPL-3.0 ([its LICENSE](aide_micro/schemes/mam4/LICENSE)).
+Apache-2.0 is compatible with GPL-3.0, so anything that imports the `mam4` physics is distributed
+as a whole under GPL-3.0; the `tomas40` scheme (emulators, projection, physics wrapper) stays
+Apache-2.0. TOMAS-JAX (LGPL-3.0) and MAM4-JAX (GPL-3.0) are separate projects, imported as optional
+dependencies and not distributed here. The weights on the Hub are Apache-2.0.

@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: Apache-2.0
+# Copyright 2026 Reflective
 """One stratospheric box with a 10 ppbv SO2 pulse, 48 h, through a tomas40 emulator.
 
     python examples/tomas40_box.py [--model bintf_d384|bintf_d256] [--hours 48] [--cpu]

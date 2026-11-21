@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: Apache-2.0
+# Copyright 2026 Reflective
 """Look up schemes by name: aide_micro.get("tomas40"), aide_micro.available()."""
 from .schemes import mam4, tomas40
 

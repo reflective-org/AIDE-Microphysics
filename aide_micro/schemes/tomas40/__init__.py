@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: Apache-2.0
+# Copyright 2026 Reflective
 """tomas40: TOMAS sectional sulfate microphysics, 40 mass-doubling bins (1.7 nm .. ~10 um).
 
     physics   TOMAS-JAX `fast` (nucleation Dunne 2016, condensation, coagulation, SO2+OH)  -> physics.step

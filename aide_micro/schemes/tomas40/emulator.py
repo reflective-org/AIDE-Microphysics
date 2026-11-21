@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: Apache-2.0
+# Copyright 2026 Reflective
 """tomas40 emulators: load a published model and run one 6 h step on per-box arrays.
 
     from aide_micro.schemes.tomas40 import emulator as E

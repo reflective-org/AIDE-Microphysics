@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: Apache-2.0
+# Copyright 2026 Reflective
 """mam4: MAM4 modal sulfate microphysics (accumulation, Aitken, coarse, primary carbon).
 
     physics   MAM4-JAX core + Dunne nucleation + Tabazadeh water (the AIDE-SAI "run 3" physics) -> physics.step

@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: Apache-2.0
+# Copyright 2026 Reflective
 """Output projection applied after every 6 h emulator step (torch float64).
 
 The network satisfies two constraints of the box model only approximately:

@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: Apache-2.0
+# Copyright 2026 Reflective
 """The contract every aerosol scheme in AIDE-Microphysics provides.
 
 A *scheme* is an aerosol representation (TOMAS 40 sectional bins, MAM4 4 modes, ...). Each scheme

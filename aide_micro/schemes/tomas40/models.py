@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: Apache-2.0
+# Copyright 2026 Reflective
 """Network classes of the shipped tomas40 emulators. Same parameter names and math as in training,
 so the published state_dicts load unchanged.
 
