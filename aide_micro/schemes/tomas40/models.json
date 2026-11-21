@@ -1,0 +1,31 @@
+{
+  "hf_repo": "reflective-org/AIDE-Microphysics",
+  "hf_revision": null,
+  "norm_stats": "tomas40/norm_stats.npz",
+  "models": {
+    "bintf_d384": {
+      "file": "tomas40/bintf_d384/model.pt",
+      "sha256": "aecf892783dbcba3c9129d918840307e4e6b6cb2c431bc28dfffba0f3e1c46dc",
+      "arch": "bintf",
+      "config": {"d": 384, "nl": 6},
+      "params": "7.16M",
+      "use": "default standalone emulator"
+    },
+    "bintf_d256": {
+      "file": "tomas40/bintf_d256/model.pt",
+      "sha256": "df9416edbe4165a29035f4d17254035292c753718d60d1eaafc409ddf1254bb9",
+      "arch": "bintf",
+      "config": {"d": 256, "nl": 4},
+      "params": "2.15M",
+      "use": "standalone, 2.6x cheaper than bintf_d384"
+    },
+    "cs_b": {
+      "file": "tomas40/cs_b/model.pt",
+      "sha256": "43603ad2c70ecb66f1c6a75d8dc809678955e999df0c5541084779cb79ae8de0",
+      "arch": "packtf",
+      "config": {"d": 256, "nl": 4, "pack": 4, "heads": 4, "ffm": 2},
+      "params": "2.1M",
+      "use": "coupled model only, with TOMAS physics on the top cells"
+    }
+  }
+}
