@@ -67,7 +67,7 @@ aide_micro/
   schemes/tomas40/        bins.py (layout, floors, normalization) · models.py (networks)
                           emulator.py (load, step) · project.py (conservation step) · physics.py
   schemes/mam4/           physics.py (MAM4-JAX run-3 physics) · bins.py (modes <-> 40 bins)
-docs/                     MODELS.md · DATA.md · ADDING_A_SCHEME.md
+docs/                     MODELS.md · DATA.md · ADDING_A_SCHEME.md · hf_model_card.md (the Hub README)
 scripts/upload_hf.py      publish weights to the Hub
 ```
 

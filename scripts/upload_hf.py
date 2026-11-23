@@ -2,10 +2,10 @@
 # Copyright 2026 Reflective
 """Publish emulator weights to the Hugging Face Hub repo named in each scheme's models.json.
 
-    python scripts/upload_hf.py <dir>      # <dir> holds tomas40/<model>/model.pt (+ README.md model card)
+    python scripts/upload_hf.py <dir>      # <dir> holds tomas40/<model>/model.pt
 
 Checks every file's sha256 against models.json before uploading, uploads norm_stats.npz next to the
-weights, and prints the commit. Needs `hf auth login` with write access to the org.
+weights and docs/hf_model_card.md as the Hub README (edit the card there, not on the Hub), and prints the commit. Needs `hf auth login` with write access to the org.
 """
 import hashlib
 import json
@@ -25,6 +25,8 @@ for name, e in man["models"].items():
 ns = os.path.join(ROOT, "aide_micro/schemes/tomas40/norm_stats.npz")
 os.makedirs(os.path.join(src, "tomas40"), exist_ok=True)
 with open(ns, "rb") as f, open(os.path.join(src, man["norm_stats"]), "wb") as g:
+    g.write(f.read())
+with open(os.path.join(ROOT, "docs/hf_model_card.md"), "rb") as f, open(os.path.join(src, "README.md"), "wb") as g:
     g.write(f.read())
 api = HfApi()
 api.create_repo(man["hf_repo"], repo_type="model", exist_ok=True)
